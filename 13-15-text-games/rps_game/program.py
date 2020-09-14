@@ -81,6 +81,6 @@ def game_loop(player_1, player_2, rolls):
         print(f'{player_2.name} wins :(')
 
 
-# Begin program
+# Begin program loop
 if __name__ == '__main__':
     main()

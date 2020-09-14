@@ -28,7 +28,7 @@ def game_loop():
 
         active_creature = random.choice(creatures)
 
-        print('A {} of level {} has appear from a dark and foggy forest...'
+        print('A {} of level {} has appeared from a dark and foggy forest...'
               .format(active_creature.name, active_creature.level))
         print()
 
@@ -38,16 +38,13 @@ def game_loop():
                 creatures.remove(active_creature)
                 print("The wizard defeated {}".format(active_creature.name))
             else:
-                print("The wizard has been defeat by the powerful {}".format(active_creature.name))
+                print("The wizard has been defeateded by the powerful {}".format(active_creature.name))
         elif cmd == 'r':
             print('The wizard has become unsure of his power and flees!!!')
         elif cmd == 'l':
-            print('The wizard {} takes in the surroundings and sees:'
-                  .format(hero.name))
+            print('The wizard {} takes in the surroundings and sees:'.format(hero.name))
             for c in creatures:
-                print(" * {} of level {}".format(
-                    c.name, c.level
-                ))
+                print(" * {} of level {}".format(c.name, c.level))
         else:
             print("OK, exiting game... bye!")
             break

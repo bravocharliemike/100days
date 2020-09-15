@@ -4,7 +4,6 @@ class Roll():
         self.name = init_roll_name
 
 
-
 class Rock(Roll):
     
     def can_defeat(self, roll_name):
